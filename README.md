@@ -105,7 +105,7 @@ SCA_ENHANCER_VENDOR_ADVISORIES_ENABLED=true
 SCA_ENHANCER_GITHUB_COMMITS_ENABLED=true
 SCA_ENHANCER_POC_SOURCES_ENABLED=true
 
-# API 密钥（用于速率限制）
+# API 密钥
 GITHUB_TOKEN=your_github_token
 NVD_API_KEY=your_nvd_api_key
 
@@ -144,49 +144,15 @@ SCA_ENHANCER_LOG_LEVEL=INFO
 # 健康检查
 python -m cli.agent.main health-check
 
-# 处理 SCA 输出
-python -m cli.agent.main process examples/sample_opensca_output.json \
-  --tool opensca --output-dir output/
-
 # 生成配置模板
 python -m cli.agent.main config-template
 
-# 查看版本信息
-python -m cli.agent.main version
-```
-
-### Python API
-
-```python
-from sca_enhancer.agent import create_agent
-
-# 创建代理
-agent = create_agent()
-
 # 处理 SCA 输出
-results = await agent.process(
-    input_path="opensca_output.json",
-    output_dir="./output",
-    sca_tool="opensca"
-)
+python cli/agent/main.py process -i output.json -t opensca
+
 ```
 
-### 直接使用工作流
 
-```python
-from sca_enhancer.agent.graph import create_agent_graph, run_workflow
-
-# 创建工作流图
-graph = create_agent_graph()
-
-# 运行工作流
-final_state = await run_workflow(
-    graph=graph,
-    input_path="opensca_output.json",
-    output_dir="./output",
-    sca_tool="opensca"
-)
-```
 
 ## 项目结构
 
@@ -210,31 +176,16 @@ SCA-enhancer/
 ├── tests/                  # 测试套件
 ├── examples/               # 使用示例
 │   ├── config_template.json    # 配置模板
-│   ├── sample_opensca_output.json # 示例数据
+│   ├── output.json # 示例数据
 │   └── output/             # 示例输出
 ├── requirements.txt        # 项目依赖（包含生产和开发环境）
 └── README.md              # 本文件
 ```
 
-## 测试
-
-运行测试套件：
-
-```bash
-# 运行所有测试
-pytest
-
-# 运行覆盖率测试
-pytest --cov=sca_enhancer
-
-# 运行特定测试类别
-pytest tests/unit/
-pytest tests/integration/
-```
 
 ## 输出示例
 
-### 增强发现
+### enhanced_findings.json
 ```json
 {
   "metadata": {
@@ -289,8 +240,7 @@ pytest tests/integration/
 ```bash
 # 启用详细日志
 export SCA_ENHANCER_LOG_LEVEL=DEBUG
-python -m cli.agent.main process examples/sample_opensca_output.json \
-  --tool opensca --output-dir output/
+python -m cli.agent.main process output.json --tool opensca --output-dir output/
 ```
 
 ## 开发指南
@@ -325,30 +275,11 @@ def create_custom_workflow():
     return graph
 ```
 
-### 性能优化
-
-1. **缓存机制**：启用向量存储缓存
-2. **并行处理**：使用异步节点处理
-3. **内存管理**：及时清理大型数据结构
-4. **批处理**：对多个发现进行批量处理
 
 ## 贡献
 
 欢迎贡献！请查看我们的贡献指南了解详情。
 
-### 开发设置
-```bash
-# 克隆仓库
-git clone https://github.com/your-org/SCA-enhancer.git
-cd SCA-enhancer
-
-# 安装开发依赖
-pip install -r requirements.txt
-pip install -e .
-
-# 运行测试
-pytest
-```
 
 ## 许可证
 
