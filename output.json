@@ -1,0 +1,2433 @@
+{
+  "task_info": {
+    "tool_version": "",
+    "app_name": "starsea-mall-master",
+    "size": 0,
+    "start_time": "2025-10-24 20:54:25",
+    "end_time": "2025-10-24 20:54:26",
+    "cost_time": 0.8802735
+  },
+  "id": "57714621344907264",
+  "children": [
+    {
+      "vendor": "com.siro.mall",
+      "name": "starsea-mall",
+      "version": "0.0.1-SNAPSHOT",
+      "language": "Java",
+      "id": "57714621344907265",
+      "direct": true,
+      "paths": [
+        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]"
+      ],
+      "children": [
+        {
+          "vendor": "org.springframework.boot",
+          "name": "spring-boot-starter-thymeleaf",
+          "version": "2.3.8.RELEASE",
+          "language": "Java",
+          "id": "57714621344907267",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-starter",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907279",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.springframework.boot",
+                  "name": "spring-boot",
+                  "version": "2.3.8.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907318",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot:2.3.8.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.springframework.boot",
+                  "name": "spring-boot-autoconfigure",
+                  "version": "2.3.8.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907319",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-autoconfigure:2.3.8.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Spring Boot 拒绝服务漏洞",
+                      "id": "XMIRROR-E5B7141B-88C13295",
+                      "cve_id": "CVE-2023-20883",
+                      "cnnvd_id": "CNNVD-202305-2284",
+                      "cwe_id": "CWE-400",
+                      "description": "CVE-2023-20883是一个高危漏洞，影响Spring Boot框架，可能在特定条件下导致拒绝服务（DoS）攻击。此漏洞出现在Spring Boot 3.0.0到3.0.6、2.7.0到2.7.11、2.6.0到2.6.14和2.5.0到2.5.14版本，尤其是在Spring MVC与反向代理缓存结合使用时。其根本原因在于不正确的缓存处理，特别是处理404响应时。如果应用程序部署在缓存这些响应的代理后面，攻击者可以通过发送特制请求利用此缺陷，导致应用程序变得无响应或崩溃，从而严重干扰服务，带来潜在的业务影响。",
+                      "suggestion": "立即升级到修补后的版本（3.0.7、2.7.12、2.6.15、或2.5.15），或者配置反向代理不缓存404响应。如无法立刻升级，应考虑临时配置反向代理以避免缓存404响应。",
+                      "attack_type": "远程",
+                      "release_date": "2023-05-18",
+                      "security_level_id": 2,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "indirect_vulnerabilities": 1
+                },
+                {
+                  "vendor": "org.springframework.boot",
+                  "name": "spring-boot-starter-logging",
+                  "version": "2.3.8.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907320",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "ch.qos.logback",
+                      "name": "logback-classic",
+                      "version": "1.2.3",
+                      "language": "Java",
+                      "id": "57714621344907352",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]/[ch.qos.logback:logback-classic:1.2.3]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "LGPL-2.0-only"
+                        }
+                      ],
+                      "vulnerabilities": [
+                        {
+                          "name": "Quality Open Software Logback 代码问题漏洞",
+                          "id": "XMIRROR-E5B71412-ED4A2C95",
+                          "cve_id": "CVE-2021-42550",
+                          "cnnvd_id": "CNNVD-202112-1415",
+                          "cnvd_id": "CNVD-2022-05030",
+                          "cwe_id": "CWE-502",
+                          "description": "Quality Open Software Logback是瑞士Quality Open Software公司的一个 Java 应用程序的日志记录框架。\r\nQuality Open Software logback 1.2.7及之前版本存在代码问题漏洞，攻击者可利用该漏洞精心设计恶意配置，从而允许执行从LDAP服务器加载的任意代码。",
+                          "suggestion": "补丁方案： \u003cp\u003e目前厂商已发布升级补丁以修复漏洞，补丁获取链接： https://github.com/cn-panda/logbackRceDemo\u003c/p\u003e\n",
+                          "attack_type": "远程",
+                          "release_date": "2021-12-16",
+                          "security_level_id": 3,
+                          "exploit_level_id": 0
+                        },
+                        {
+                          "name": "logback 安全漏洞",
+                          "id": "XMIRROR-E5B714EF-DD535F95",
+                          "cve_id": "CVE-2024-12798",
+                          "cnnvd_id": "CNNVD-202412-2461",
+                          "cwe_id": "CWE-917",
+                          "description": "logback是QOS.CH开源的一个可靠、通用、快速且灵活的 Java 日志记录框架。\r\nlogback 1.5.12版本存在安全漏洞。攻击者利用该漏洞可以通过破坏现有logback配置文件或在程序执行前注入环境变量来执行任意代码。",
+                          "suggestion": "Remove Janino from the Java classpath. Alternatively, update to logback \nversion 1.5.13 or later. If you are using the 1.3.x series, update to \nlogback version 1.3.15 or later. Note that the 1.4.x series remains \nvulnerable.",
+                          "attack_type": "本地",
+                          "release_date": "2024-12-19",
+                          "security_level_id": 3,
+                          "exploit_level_id": 0
+                        },
+                        {
+                          "name": "Logback 接收器组件 反序列化漏洞",
+                          "id": "XMIRROR-E5B70F55-9A58A295",
+                          "cve_id": "CVE-2023-6481",
+                          "cnnvd_id": "CNNVD-202312-277",
+                          "cwe_id": "CWE-400",
+                          "description": "该漏洞影响Logback接收器组件的1.4.13、1.3.13和1.2.12版本。由于组件在处理序列化数据时存在缺陷，攻击者可以通过发送特制的恶意数据包触发该漏洞，可能导致受影响系统发生拒绝服务（DoS）攻击。",
+                          "suggestion": "立即升级到Logback的修补版本，如1.4.14、1.3.14和1.2.13。实施严格的数据输入验证，仅允许可信来源的数据进入Logback接收器。考虑使用更安全的序列化器，如Kryo或FST。如果应用不依赖Logback接收器，建议禁用或限制其使用。",
+                          "attack_type": "本地",
+                          "release_date": "2023-12-04",
+                          "security_level_id": 2,
+                          "exploit_level_id": 0
+                        }
+                      ],
+                      "children": [
+                        {
+                          "vendor": "ch.qos.logback",
+                          "name": "logback-core",
+                          "version": "1.2.3",
+                          "language": "Java",
+                          "id": "57714621344907363",
+                          "paths": [
+                            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]/[ch.qos.logback:logback-classic:1.2.3]/[ch.qos.logback:logback-core:1.2.3]"
+                          ],
+                          "vulnerabilities": [
+                            {
+                              "name": "logback 1.4.11 序列化漏洞",
+                              "id": "XMIRROR-E5B70F55-9A857B95",
+                              "cve_id": "CVE-2023-6378",
+                              "cnnvd_id": "CNNVD-202311-2206",
+                              "cwe_id": "CWE-502",
+                              "description": "logback 1.4.11版本中的logback接收组件存在序列化漏洞。当攻击者发送恶意构造的数据时，可以触发此漏洞，导致拒绝服务攻击。",
+                              "suggestion": "用户应立即升级到最新版本的logback，以修复该漏洞。如果无法立即升级，可以采取以下临时措施：1. 限制对logback组件的访问，只允许受信任的来源发送日志数据；2. 监控异常日志活动，一旦发现异常立即采取措施；3. 使用防火墙或入侵检测系统来阻止潜在的恶意流量。",
+                              "attack_type": "本地",
+                              "release_date": "2023-11-29",
+                              "security_level_id": 2,
+                              "exploit_level_id": 0
+                            },
+                            {
+                              "name": "Insufficient Hostname Verification",
+                              "id": "XMIRROR-E5B77528-7749C72B",
+                              "cwe_id": "CWE-20",
+                              "description": "## Overview\n[ch.qos.logback:logback-core](https://mvnrepository.com/artifact/ch.qos.logback/logback-core) is a logback-core module.\n\nAffected versions of this package are vulnerable to Insufficient Hostname Verification. `X.509` are not properly validated. By spoofing the TLS/SSL server via a certificate that appears valid, an attacker with the ability to intercept network traffic (e.g. MitM, DNS cache poisoning) can disclose and optionally manipulate transmitted data.\n## Remediation\nUpgrade `ch.qos.logback:logback-core` to version 1.2.7 or higher.\n## References\n- [GitHub Commit](https://github.com/qos-ch/logback/commit/626c7733c188f2ad60c1348a493761f60e2d7958)\n- [GitHub PR](https://github.com/qos-ch/logback/pull/305)\n- [Jira Issue](https://jira.qos.ch/browse/LOGBACK-1574)\n",
+                              "suggestion": "## Remediation\nUpgrade `ch.qos.logback:logback-core` to version 1.2.7 or higher.",
+                              "attack_type": "远程",
+                              "release_date": "2021-10-01",
+                              "security_level_id": 3,
+                              "exploit_level_id": 0
+                            },
+                            {
+                              "name": "logback 安全漏洞",
+                              "id": "XMIRROR-E5B714EF-DD53A195",
+                              "cve_id": "CVE-2024-12801",
+                              "cnnvd_id": "CNNVD-202412-2466",
+                              "cwe_id": "CWE-918",
+                              "description": "logback是QOS.CH开源的一个可靠、通用、快速且灵活的 Java 日志记录框架。\r\nlogback 1.5.12版本存在安全漏洞，该漏洞源于SaxEventRecorder包含一个服务器端请求伪造问题。攻击者利用该漏洞可以通过破坏XML中的logback配置文件来伪造请求。",
+                              "suggestion": "Update to logback version 1.5.13 or later. If you are using the 1.3.x \nseries, update to logback version 1.3.15 or later. Note that the 1.4.x \nseries remains vulnerable.",
+                              "attack_type": "本地",
+                              "release_date": "2024-12-19",
+                              "security_level_id": 4,
+                              "exploit_level_id": 0
+                            }
+                          ],
+                          "indirect_vulnerabilities": 3
+                        }
+                      ],
+                      "indirect_vulnerabilities": 6
+                    },
+                    {
+                      "vendor": "org.apache.logging.log4j",
+                      "name": "log4j-to-slf4j",
+                      "version": "2.13.3",
+                      "language": "Java",
+                      "id": "57714621344907353",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]/[org.apache.logging.log4j:log4j-to-slf4j:2.13.3]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "vendor": "org.apache.logging.log4j",
+                          "name": "log4j-api",
+                          "version": "2.13.3",
+                          "language": "Java",
+                          "id": "57714621344907364",
+                          "paths": [
+                            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]/[org.apache.logging.log4j:log4j-to-slf4j:2.13.3]/[org.apache.logging.log4j:log4j-api:2.13.3]"
+                          ],
+                          "licenses": [
+                            {
+                              "name": "Apache-2.0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "vendor": "org.slf4j",
+                      "name": "jul-to-slf4j",
+                      "version": "1.7.30",
+                      "language": "Java",
+                      "id": "57714621344907354",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-logging:2.3.8.RELEASE]/[org.slf4j:jul-to-slf4j:1.7.30]"
+                      ]
+                    }
+                  ],
+                  "indirect_vulnerabilities": 6
+                },
+                {
+                  "vendor": "jakarta.annotation",
+                  "name": "jakarta.annotation-api",
+                  "version": "1.3.5",
+                  "language": "Java",
+                  "id": "57714621344907321",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[jakarta.annotation:jakarta.annotation-api:1.3.5]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.yaml",
+                  "name": "snakeyaml",
+                  "version": "1.26",
+                  "language": "Java",
+                  "id": "57714621344907322",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter:2.3.8.RELEASE]/[org.yaml:snakeyaml:1.26]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                }
+              ],
+              "indirect_vulnerabilities": 7
+            },
+            {
+              "vendor": "org.thymeleaf",
+              "name": "thymeleaf-spring5",
+              "version": "3.0.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907280",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Thymeleaf 代码注入漏洞",
+                  "id": "XMIRROR-E5B71412-ED5A5795",
+                  "cve_id": "CVE-2021-43466",
+                  "cnnvd_id": "CNNVD-202111-870",
+                  "cwe_id": "CWE-94",
+                  "description": "Thymeleaf-Spring5版本3.0.12组件中，结合特定场景的模板注入可能导致远程代码执行。攻击者可以通过AjaxThymeleafView.java中的render函数注入恶意输入，执行任意代码。",
+                  "suggestion": "升级Thymeleaf-Spring5到3.0.13及以上版本，确保模板注入得到有效防护。同时，应用安全编码实践，避免用户输入直接传递到模板中。",
+                  "attack_type": "远程",
+                  "release_date": "2021-11-09",
+                  "security_level_id": 1,
+                  "exploit_level_id": 2
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.thymeleaf",
+                  "name": "thymeleaf",
+                  "version": "3.0.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907323",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE]/[org.thymeleaf:thymeleaf:3.0.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Thymeleaf 跨站模板注入漏洞",
+                      "id": "XMIRROR-E5B7141B-88A07A95",
+                      "cve_id": "CVE-2023-38286",
+                      "cnnvd_id": "CNNVD-202307-1301",
+                      "cwe_id": "CWE-77",
+                      "description": "Thymeleaf 是一个用于处理和生成 HTML、XML、JavaScript、CSS 和纯文本的现代服务器端 Java 模板引擎。受影响的版本为 Thymeleaf 3.1.1.RELEASE 及之前版本，特别是在与 Spring Boot Admin 3.1.0 及之前版本一起使用时。该漏洞允许通过精心制作的 HTML 绕过沙箱，从而导致服务器端模板注入（SSTI）和远程代码执行（RCE）。漏洞的根本原因在于 Thymeleaf 模板引擎的沙箱机制不够完善，可以通过特殊构造的 HTML 输入绕过。",
+                      "suggestion": "建议立即将 Thymeleaf 升级到 3.1.2 或更高版本。如果不需要，禁用 MailNotifier 功能。限制对 /env 执行器端点的写权限，以防止恶意用户通过用户界面修改环境变量。同时，避免在 MailNotifier 的模板属性中设置使用 http:// 或 file:/// 协议，以减少暴露外部输入的风险。",
+                      "attack_type": "远程",
+                      "release_date": "2023-07-14",
+                      "security_level_id": 2,
+                      "exploit_level_id": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "org.attoparser",
+                      "name": "attoparser",
+                      "version": "2.0.5.RELEASE",
+                      "language": "Java",
+                      "id": "57714621344907355",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE]/[org.thymeleaf:thymeleaf:3.0.12.RELEASE]/[org.attoparser:attoparser:2.0.5.RELEASE]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ]
+                    },
+                    {
+                      "vendor": "org.unbescape",
+                      "name": "unbescape",
+                      "version": "1.1.6.RELEASE",
+                      "language": "Java",
+                      "id": "57714621344907356",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE]/[org.thymeleaf:thymeleaf:3.0.12.RELEASE]/[org.unbescape:unbescape:1.1.6.RELEASE]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "indirect_vulnerabilities": 1
+                }
+              ],
+              "indirect_vulnerabilities": 2
+            },
+            {
+              "vendor": "org.thymeleaf.extras",
+              "name": "thymeleaf-extras-java8time",
+              "version": "3.0.4.RELEASE",
+              "language": "Java",
+              "id": "57714621344907281",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-thymeleaf:2.3.8.RELEASE]/[org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            }
+          ],
+          "indirect_vulnerabilities": 9
+        },
+        {
+          "vendor": "org.springframework.boot",
+          "name": "spring-boot-starter-web",
+          "version": "2.3.8.RELEASE",
+          "language": "Java",
+          "id": "57714621344907268",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-starter-json",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907282",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "com.fasterxml.jackson.core",
+                  "name": "jackson-databind",
+                  "version": "2.11.4",
+                  "language": "Java",
+                  "id": "57714621344907324",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]/[com.fasterxml.jackson.core:jackson-databind:2.11.4]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "FasterXML jackson-databind 安全漏洞",
+                      "id": "XMIRROR-E5B71412-ED58DF95",
+                      "cve_id": "CVE-2021-46877",
+                      "cnnvd_id": "CNNVD-202303-1466",
+                      "cwe_id": "CWE-770",
+                      "description": "FasterXML jackson-databind是FasterXML公司的一个基于JAVA可以将XML和JSON等数据格式与JAVA对象进行转换的库。Jackson可以轻松的将Java对象转换成json对象和xml文档，同样也可以将json、xml转换成Java对象。\r\nFasterXML jackson-databind 存在安全漏洞，该漏洞源于允许攻击者在涉及JsonNode JDK 序列化的罕见情况下导致拒绝服务。以下产品和版本受到影响：jackson-databind2.10.0至2.13.0版本（但不包括2.12.6版本和2.13.1版本）",
+                      "suggestion": "升级至官方推出的补丁版本：2.12.6、2.13.1",
+                      "attack_type": "远程",
+                      "release_date": "2023-03-18",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "FasterXML jackson-databind 缓冲区错误漏洞",
+                      "id": "XMIRROR-E5B71403-AF603195",
+                      "cve_id": "CVE-2020-36518",
+                      "cnnvd_id": "CNNVD-202203-1165",
+                      "cwe_id": "CWE-787",
+                      "description": "FasterXML jackson-databind是一个基于JAVA可以将XML和JSON等数据格式与JAVA对象进行转换的库。Jackson可以轻松的将Java对象转换成json对象和xml文档，同样也可以将json、xml转换成Java对象。\r\nFasterXML jackson-databind 2.13.0之前版本中存在安全漏洞，该漏洞源于软件中存在Java的栈溢出异常，攻击者可以通过大量嵌套对象利用该漏洞实现拒绝服务攻击。",
+                      "suggestion": "通用方案： 目前厂商暂未发布修复措施解决此安全问题，建议使用此软件的用户随时关注厂商主页或参考网址以获取解决办法： https://github.com/FasterXML/jackson-databind/issues/2816\n",
+                      "attack_type": "远程",
+                      "release_date": "2022-03-11",
+                      "security_level_id": 2,
+                      "exploit_level_id": 1
+                    },
+                    {
+                      "name": "Denial of Service (DoS)",
+                      "id": "XMIRROR-E5B77528-95B5572B",
+                      "cwe_id": "CWE-400",
+                      "description": "## Overview\n[com.fasterxml.jackson.core:jackson-databind](https://github.com/FasterXML/jackson-databind) is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) when using JDK serialization to serialize and deserialize `JsonNode` values.\r\nIt is possible for the attacker to send a 4-byte length payload, with a value of `Integer.MAX_VALUE` , that will eventually cause large buffer allocation and out of heap memory.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `com.fasterxml.jackson.core:jackson-databind` to version 2.13.1, 2.12.6 or higher.\n## References\n- [GitHub Commit](https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb)\n- [GitHub Issue](https://github.com/FasterXML/jackson-databind/issues/3328)\n",
+                      "suggestion": "## Remediation\nUpgrade `com.fasterxml.jackson.core:jackson-databind` to version 2.13.1, 2.12.6 or higher.",
+                      "attack_type": "远程",
+                      "release_date": "2021-12-26",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "FasterXML jackson-databind 反序列化资源耗尽漏洞",
+                      "id": "XMIRROR-E5B714FC-3151F995",
+                      "cve_id": "CVE-2022-42004",
+                      "cnnvd_id": "CNNVD-202210-006",
+                      "cwe_id": "CWE-502",
+                      "description": "该漏洞影响FasterXML jackson-databind库（版本2.13.4之前），特别是其`BeanDeserializer._deserializeFromArray`函数。由于缺乏对深度嵌套数组的检查，攻击者通过发送包含深度嵌套数组的特制JSON数据包，可能导致系统资源耗尽，引发拒绝服务攻击。",
+                      "suggestion": "立即升级FasterXML jackson-databind库至2.13.4或更高版本。针对Quarkus用户，应升级到2.13.0或更高版本；Debian Linux用户应应用jackson-databind的安全更新；NetApp OnCommand Workflow Automation用户应咨询NetApp获取相应指导。如无法立即升级，建议限制对受影响端点的访问，以降低风险。",
+                      "attack_type": "远程",
+                      "release_date": "2022-10-02",
+                      "security_level_id": 2,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "FasterXML jackson-databind 资源消耗漏洞",
+                      "id": "XMIRROR-E5B714FC-31513295",
+                      "cve_id": "CVE-2022-42003",
+                      "cnnvd_id": "CNNVD-202210-007",
+                      "cwe_id": "CWE-502",
+                      "description": "\u003cp\u003e在FasterXML jackson-databind版本2.13.4.1和2.12.17.1之前的版本中，当启用UNWRAP_SINGLE_VALUE_ARRAYS功能时，由于缺少检查以避免深层包装数组嵌套，可能会发生资源耗尽。这是因为原始值反序列化器中缺少检查，导致可能的资源耗尽。\u003c/p\u003e",
+                      "suggestion": "\u003cp\u003e升级到FasterXML jackson-databind版本2.12.17.1、2.13.4.2或更高版本，这些版本已经修复了该漏洞。\u003c/p\u003e",
+                      "attack_type": "远程",
+                      "release_date": "2022-10-02",
+                      "security_level_id": 2,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "com.fasterxml.jackson.core",
+                      "name": "jackson-core",
+                      "version": "2.11.4",
+                      "language": "Java",
+                      "id": "57714621344907357",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]/[com.fasterxml.jackson.core:jackson-databind:2.11.4]/[com.fasterxml.jackson.core:jackson-core:2.11.4]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ],
+                      "vulnerabilities": [
+                        {
+                          "name": "Jackson-core 信息泄漏漏洞",
+                          "id": "XMIRROR-E5B714FA-9A10D395",
+                          "cve_id": "CVE-2025-49128",
+                          "cnnvd_id": "CNNVD-202506-827",
+                          "cwe_id": "CWE-209",
+                          "description": "Jackson-core 是一个用于流式处理 JSON 数据的核心库，广泛用于各种 Java 应用程序中。该库提供增量解析和生成 JSON 文档的功能。在某些情况下，使用 JsonLocation._appendSourceDesc 方法可能会导致最多 500 字节的未预期内存内容被包含在异常消息中。当从字节数组解析 JSON 数据并指定偏移和长度时，异常消息错误地从数组的起始位置读取而不是逻辑有效载荷的起始位置。这可能导致信息泄漏，尤其是在使用池化或重复使用的缓冲区的系统中，例如 Netty 或 Vert.x。",
+                          "suggestion": "建议所有用户升级到 Jackson-core 版本 2.13.0 或更高版本，以解决此问题。若无法立即进行升级，可以采取以下临时措施：\n1. 禁止将解析异常消息暴露给客户端，避免在 HTTP 响应中返回解析异常消息。\n2. 通过设置 jsonFactory.disable(JsonFactory.Feature.INCLUDE_SOURCE_IN_LOCATION) 来禁用异常中的来源嵌入，以防止 Jackson 在异常消息中嵌入任何来源内容，从而避免泄漏。",
+                          "attack_type": "本地",
+                          "release_date": "2025-06-06",
+                          "security_level_id": 3,
+                          "exploit_level_id": 2
+                        },
+                        {
+                          "name": "Jackson-core 深度嵌套数据解析漏洞",
+                          "id": "XMIRROR-E5B714FA-9A77AE95",
+                          "cve_id": "CVE-2025-52999",
+                          "cnnvd_id": "CNNVD-202506-3167",
+                          "cwe_id": "CWE-121",
+                          "description": "Jackson-core 是一个用于 Jackson 数据处理器的核心低级增量（流式）解析器和生成器抽象。它主要负责处理 JSON 数据的解析和生成。在 2.15.0 之前的版本中，如果用户解析的输入文件含有非常深的嵌套数据，Jackson-core 可能会因嵌套深度过大而导致 StackoverflowError。Jackson-core 2.15.0 引入了一项可配置的限制，默认允许的深度为 1000，如果超过这个限制，Jackson-core 将抛出一个 StreamConstraintsException。此更改同样惠及到使用 Jackson-core 解析 JSON 输入的 jackson-databind。",
+                          "suggestion": "升级到 Jackson-core 版本 2.15.0 或更高，并配置适当的递归深度限制。作为临时解决方案，应避免解析未受信任来源的输入文件。长期建议包括进行输入有效性检查并限制最大递归深度。",
+                          "attack_type": "远程",
+                          "release_date": "2025-06-25",
+                          "security_level_id": 2,
+                          "exploit_level_id": 2
+                        }
+                      ],
+                      "indirect_vulnerabilities": 2
+                    }
+                  ],
+                  "indirect_vulnerabilities": 7
+                },
+                {
+                  "vendor": "com.fasterxml.jackson.datatype",
+                  "name": "jackson-datatype-jdk8",
+                  "version": "2.11.4",
+                  "language": "Java",
+                  "id": "57714621344907325",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]/[com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4]"
+                  ]
+                },
+                {
+                  "vendor": "com.fasterxml.jackson.datatype",
+                  "name": "jackson-datatype-jsr310",
+                  "version": "2.11.4",
+                  "language": "Java",
+                  "id": "57714621344907326",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]/[com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4]"
+                  ]
+                },
+                {
+                  "vendor": "com.fasterxml.jackson.module",
+                  "name": "jackson-module-parameter-names",
+                  "version": "2.11.4",
+                  "language": "Java",
+                  "id": "57714621344907327",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-json:2.3.8.RELEASE]/[com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4]"
+                  ]
+                }
+              ],
+              "indirect_vulnerabilities": 7
+            },
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-starter-tomcat",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907283",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-tomcat:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.apache.tomcat.embed",
+                  "name": "tomcat-embed-core",
+                  "version": "9.0.41",
+                  "language": "Java",
+                  "id": "57714621344907328",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-tomcat:2.3.8.RELEASE]/[org.apache.tomcat.embed:tomcat-embed-core:9.0.41]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Apache Tomcat URL重定向漏洞",
+                      "id": "XMIRROR-E5B7141B-7C721195",
+                      "cve_id": "CVE-2023-41080",
+                      "cnnvd_id": "CNNVD-202308-2096",
+                      "cnvd_id": "CNVD-2023-80565",
+                      "cwe_id": "CWE-601",
+                      "description": "\u003cp\u003eApache Tomcat在其FORM认证功能中存在一个URL重定向到不受信任站点（'Open Redirect'）的漏洞。该问题影响的Apache Tomcat版本包括：11.0.0-M1至11.0.0-M10，10.1.0-M1至10.0.12，9.0.0-M1至9.0.79，以及8.5.0至8.5.92。该漏洞仅限于ROOT（默认）web应用程序。\u003c/p\u003e",
+                      "suggestion": "\u003cp\u003e立即升级到不受影响的Apache Tomcat版本，具体包括：更新到11.0.0-M11或更高版本，更新到10.1.0-M13或更高版本，更新到9.0.80或更高版本，或者更新到8.5.93或更高版本。此外，可以采取以下措施：限制对ROOT web应用程序的访问，监控和记录所有HTTP重定向请求，以便发现异常行为。\u003c/p\u003e",
+                      "attack_type": "远程",
+                      "release_date": "2023-08-25",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Apache Tomcat 拒绝服务漏洞",
+                      "id": "XMIRROR-E5B7141B-888BBC95",
+                      "cve_id": "CVE-2023-28709",
+                      "cnnvd_id": "CNNVD-202305-1931",
+                      "cnvd_id": "CNVD-2023-42970",
+                      "cwe_id": "CWE-193",
+                      "description": "\u003cp\u003eCVE-2023-28709漏洞是由于CVE-2023-24998的修复不完全，影响版本包括Apache Tomcat 11.0.0-M2到11.0.0-M4，10.1.5到10.1.7，9.0.71到9.0.73和8.5.85到8.5.87。如果使用了非默认的HTTP连接器设置，使得maxParameterCount可以通过查询字符串参数达到并提交了一个包含精确maxParameterCount参数的请求，则可以绕过上传请求部分的限制，从而有可能导致拒绝服务（DoS）。\u003c/p\u003e",
+                      "suggestion": "\u003cp\u003e建议立即升级到最新版本的Apache Tomcat，以修复此漏洞。若无法立刻升级，可以采取以下临时措施：1. 检查并调整HTTP连接器的maxParameterCount设置，确保其在合理范围内。2. 使用防火墙或其他网络安全设备限制可疑IP地址的访问。3. 监控服务器日志，及时发现和应对异常请求。\u003c/p\u003e",
+                      "attack_type": "远程",
+                      "release_date": "2023-05-22",
+                      "security_level_id": 2,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Apache Tomcat HTTP请求走私漏洞",
+                      "id": "XMIRROR-E5B71412-EDAADD95",
+                      "cve_id": "CVE-2021-33037",
+                      "cnnvd_id": "CNNVD-202107-681",
+                      "cwe_id": "CWE-444",
+                      "description": "\u003cp\u003eApache Tomcat版本10.0.0-M1到10.0.6、9.0.0.M1到9.0.46以及8.5.0到8.5.66在某些情况下未正确解析HTTP传输编码请求头，导致在与反向代理一起使用时，可能出现请求走私的情况。具体而言：当客户端声明只接受HTTP/1.0响应时，Tomcat错误地忽略了传输编码头；Tomcat支持'identity'编码；Tomcat没有确保如果存在分块编码，它是最终的编码。\u003c/p\u003e",
+                      "suggestion": "\u003cp\u003e立即升级到最新版本的Apache Tomcat。若无法立即升级，请确保反向代理和相关系统配置正确处理传输编码头，特别是确保分块编码是最终编码。使用Web应用防火墙（WAF）来检测和阻止可疑请求也是一种有效的缓解措施。\u003c/p\u003e",
+                      "attack_type": "远程",
+                      "release_date": "2021-07-12",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Apache Tomcat JNDI Realm 认证绕过漏洞",
+                      "id": "XMIRROR-E5B71412-EDDF5695",
+                      "cve_id": "CVE-2021-30640",
+                      "cnnvd_id": "CNNVD-202107-684",
+                      "cwe_id": "CWE-116",
+                      "description": "\u003cp\u003eApache Tomcat的JNDI Realm存在一个漏洞，该漏洞允许攻击者使用有效用户名的变体来进行认证，或者绕过LockOut Realm提供的一些保护。该漏洞影响Apache Tomcat的以下版本：10.0.0-M1到10.0.5；9.0.0.M1到9.0.45；8.5.0到8.5.65。\u003c/p\u003e",
+                      "suggestion": "\u003cp\u003e立即将Apache Tomcat升级到以下版本：10.0.6或更高版本；9.0.46或更高版本；8.5.66或更高版本。同时，应审查并加强应用程序的认证和授权机制，确保采用强密码策略，并监控和分析登录活动。\u003c/p\u003e",
+                      "attack_type": "远程",
+                      "release_date": "2021-07-12",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Apache Tomcat 请求头信息泄露漏洞",
+                      "id": "XMIRROR-E5B71412-ED726895",
+                      "cve_id": "CVE-2021-25122",
+                      "cnnvd_id": "CNNVD-202103-008",
+                      "cwe_id": "CWE-200",
+                      "description": "该漏洞影响Apache Tomcat版本从10.0.0-M1到10.0.0、9.0.0.M1到9.0.41以及8.5.0到8.5.61。当响应新的h2c连接请求时，Tomcat可能会复制一个请求的请求头和部分请求主体信息到另一个请求，导致用户A和用户B都能看到用户A请求的结果。",
+                      "suggestion": "立即升级到Apache Tomcat的最新版本，以修复此漏洞。官方已经在后续版本中解决了该问题。如果不能立即升级，可采取以下临时措施：禁用h2c协议，限制对Tomcat服务器的外部访问或使用应用层网关代理来过滤请求。",
+                      "attack_type": "远程",
+                      "release_date": "2021-03-01",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Apache Tomcat APR/Native 连接器竞态条件漏洞",
+                      "id": "XMIRROR-E5B714FA-9AAF3895",
+                      "cve_id": "CVE-2025-52434",
+                      "cnnvd_id": "CNNVD-202507-1398",
+                      "cnvd_id": "CNVD-2025-16616",
+                      "cwe_id": "CWE-362",
+                      "description": "Apache Tomcat 是一个被广泛使用的开源 Java Servlet 容器，用于在 Web 服务器上运行 Java 应用程序。APR/Native 连接器是 Apache Tomcat 的一个模块，提供对系统底层网络服务的优化支持。在使用该连接器时，存在并发执行与共享资源同步不当的问题（竞态条件），特别是在客户端主动关闭 HTTP/2 连接时容易触发。由于资源共享的同步机制不完善，可能导致连接器崩溃，从而使系统无法正常服务。",
+                      "suggestion": "建议尽快将 Apache Tomcat 升级到 9.0.107 版本以修复此漏洞。此外，可以暂时限制 HTTP/2 的使用，或通过配置防止客户端关闭连接行为，以降低风险。在长期内，建议对重要服务加强监控，并进行更频繁的安全审计。",
+                      "attack_type": "远程",
+                      "release_date": "2025-07-10",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Apache Tomcat HTTP/2未控制的资源消耗漏洞",
+                      "id": "XMIRROR-E5B714FA-9A53F795",
+                      "cve_id": "CVE-2025-53506",
+                      "cnnvd_id": "CNNVD-202507-1409",
+                      "cnvd_id": "CNVD-2025-16618",
+                      "cwe_id": "CWE-400",
+                      "description": "Apache Tomcat是一个由Apache Software Foundation开发的开源Java Servlet容器，广泛用于Web应用服务器中。此漏洞涉及HTTP/2协议的初始设置帧，它用于限制最大允许的并发流数量。如果HTTP/2客户端没有确认此设置帧，Tomcat的资源管理机制可能会失效，导致未受控的资源消耗并最终造成拒绝服务。此问题影响以下版本：11.0.0-M1至11.0.8、10.1.0-M1至10.1.42、9.0.0.M1至9.0.106。",
+                      "suggestion": "建议用户尽快升级Apache Tomcat到11.0.9、10.1.43或9.0.107版本以解决此问题。作为临时缓解措施，可考虑监控HTTP/2流的数量，或者适当配置防火墙规则以限制不必要的流量。长期来看，加强对HTTP/2协议的安全审计也是必要的。",
+                      "attack_type": "远程",
+                      "release_date": "2025-07-10",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Apache Tomcat 整数溢出漏洞导致拒绝服务（DoS）攻击",
+                      "id": "XMIRROR-E5B714FA-9A228695",
+                      "cve_id": "CVE-2025-52520",
+                      "cnnvd_id": "CNNVD-202507-1406",
+                      "cnvd_id": "CNVD-2025-16617",
+                      "cwe_id": "CWE-190",
+                      "description": "Apache Tomcat是一个免费的开源Web服务器和Servlet容器，广泛用于Java应用的开发和生产环境。此漏洞影响Apache Tomcat的某些版本（包括11.0.0-M1到11.0.8，10.1.0-M1到10.1.4，以及9.0.0.M1到9.0.10）。在这些版本中，某些特殊的多部分上传配置可能导致整数溢出漏洞，这可以被攻击者用来绕过上传大小限制，从而实施拒绝服务（DoS）攻击。整数溢出一般是由于在运算过程中未正确处理数据的大小导致的，当上传文件过大时，计算文件大小的整型变量溢出，从而破坏了系统用于请求大小的限制。",
+                      "suggestion": "建议用户及时将Apache Tomcat升级到修复此问题的版本，分别为11.0.9，10.1.43和9.0.107。此外，用户可以临时调整其多部分上传配置以限制潜在风险。为了长期预防此类问题，应加强对组件的安全审计，并遵循安全编码实践以疑似漏洞入侵可能性。",
+                      "attack_type": "远程",
+                      "release_date": "2025-07-10",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Apache Tomcat安全约束绕过漏洞",
+                      "id": "XMIRROR-E5B714FA-9A49EF95",
+                      "cve_id": "CVE-2025-46701",
+                      "cnnvd_id": "CNNVD-202505-4064",
+                      "cnvd_id": "CNVD-2025-16619",
+                      "cwe_id": "CWE-178",
+                      "description": "Apache Tomcat的GCI servlet存在不当处理大小写的漏洞，允许绕过应用于URI路径信息组件的安全约束。",
+                      "suggestion": "建议升级到Apache Tomcat 11.0.7、10.1.41或9.0.105版本，以修复该问题。",
+                      "attack_type": "远程",
+                      "release_date": "2025-05-29",
+                      "security_level_id": 3,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Apache Tomcat 未检查错误条件漏洞",
+                      "id": "XMIRROR-E5B714EF-EAF45895",
+                      "cve_id": "CVE-2024-52316",
+                      "cnnvd_id": "CNNVD-202411-2306",
+                      "cwe_id": "CWE-391 CWE-754",
+                      "description": "Apache Tomcat 是一个开源的 Web 应用服务器，广泛用于运行 Java Servlet 和 JavaServer Pages 应用。在使用自定义的 Jakarta Authentication（以前称为 JASPIC）ServerAuthContext 组件时，如果该组件在认证过程中抛出异常且未明确设置 HTTP 状态以指示失败，则认证可能不会失败，从而允许用户绕过认证过程。虽然目前没有已知的 Jakarta Authentication 组件会这样行为，但该漏洞仍然存在。",
+                      "suggestion": "建议用户立即升级至 Apache Tomcat 版本 11.0.0、10.1.31 或 9.0.96，以修复此漏洞。同时，应审查和测试自定义的认证组件，确保它们能够正确处理异常并设置适当的 HTTP 状态代码。",
+                      "attack_type": "远程",
+                      "release_date": "2024-11-18",
+                      "security_level_id": 1,
+                      "exploit_level_id": 1
+                    },
+                    {
+                      "name": "Apache Tomcat远程规则绕过漏洞",
+                      "id": "XMIRROR-E5B714FA-9A719395",
+                      "cve_id": "CVE-2025-31651",
+                      "cnnvd_id": "CNNVD-202504-3898",
+                      "cnvd_id": "CNVD-2025-10031",
+                      "cwe_id": "CWE-116",
+                      "description": "Apache Tomcat是一个开源的Java Servlet容器和Web服务器。该漏洞源于在处理请求时，RewriteValve模块未能正确处理特殊字符，可能导致安全约束被绕过。",
+                      "suggestion": "建议用户升级到Apache Tomcat 9.0.104、10.1.40或11.0.6及以上版本以修复此问题。",
+                      "attack_type": "远程",
+                      "release_date": "2025-04-28",
+                      "security_level_id": 3,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Apache Tomcat 会话固定漏洞（CVE-2025-55668）",
+                      "id": "XMIRROR-E5B714FA-9A523395",
+                      "cve_id": "CVE-2025-55668",
+                      "cnnvd_id": "CNNVD-202508-1339",
+                      "cnvd_id": "CNVD-2025-19105",
+                      "cwe_id": "CWE-384",
+                      "description": "Apache Tomcat 是美国阿帕奇（Apache）基金会开发的一款轻量级 Web 应用服务器，主要用于实现对 Servlet 和 JavaServer Pages（JSP）的支持。该组件广泛用于部署 Java Web 应用。漏洞存在于 Apache Tomcat 的 rewrite valve 中，特定版本（11.0.0-M1 至 11.0.7、10.1.0-M1 至 10.1.41 和 9.0.0.M1 至 9.0.105）未正确处理会话固定问题。攻击者可通过伪造的 URL 或其他方式操纵 rewrite valve 的行为，诱使用户使用攻击者指定的会话 ID，从而导致会话固定攻击。",
+                      "suggestion": "建议受影响用户尽快升级 Apache Tomcat 至安全版本（11.0.8、10.1.42 或 9.0.106），以修复该漏洞。如果无法立即升级，可考虑暂时禁用 rewrite valve 或配置更严格的会话管理策略。此外，建议定期检查应用程序日志以监控异常活动，并加强 Web 应用的安全审计。",
+                      "attack_type": "远程",
+                      "release_date": "2025-08-13",
+                      "security_level_id": 3,
+                      "exploit_level_id": 1
+                    },
+                    {
+                      "name": "Apache Tomcat 资源关闭不当漏洞 (拒绝服务)",
+                      "id": "XMIRROR-E5B714FA-9A54A895",
+                      "cve_id": "CVE-2025-48989",
+                      "cnnvd_id": "CNNVD-202508-1369",
+                      "cnvd_id": "CNVD-2025-19106",
+                      "cwe_id": "CWE-404",
+                      "description": "Apache Tomcat 是由美国阿帕奇基金会开发的轻量级 Web 应用服务器，主要用于支持 Servlet 和 JavaServer Pages（JSP）。该漏洞存在于 Apache Tomcat 的多个版本中（11.0.0-M1 至 11.0.9、10.1.0-M1 至 10.1.43、9.0.0.M1 至 9.0.107），其根本原因是资源未正确关闭或释放，可能会导致系统遭受拒绝服务（DoS）攻击。攻击者通过滥用资源或触发资源释放失败，可能导致系统资源耗尽，无法响应合法请求。该漏洞可能影响较早的已停止维护的版本。",
+                      "suggestion": "建议用户立即升级至以下修复版本：11.0.10、10.1.44 或 9.0.108。此外，可以在升级前通过以下缓解措施减轻风险：\n1. 配置资源限制策略，在资源使用达到阈值时触发警报。\n2. 使用 Web 应用防火墙（WAF）检测和阻止异常请求。\n长期建议包括：\n1. 定期检查并更新至最新版本，确保安全补丁及时应用。\n2. 加强资源管理和释放机制的代码审计。",
+                      "attack_type": "远程",
+                      "release_date": "2025-08-13",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    }
+                  ],
+                  "indirect_vulnerabilities": 13
+                },
+                {
+                  "vendor": "org.glassfish",
+                  "name": "jakarta.el",
+                  "version": "3.0.3",
+                  "language": "Java",
+                  "id": "57714621344907329",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-tomcat:2.3.8.RELEASE]/[org.glassfish:jakarta.el:3.0.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.apache.tomcat.embed",
+                  "name": "tomcat-embed-websocket",
+                  "version": "9.0.41",
+                  "language": "Java",
+                  "id": "57714621344907330",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-starter-tomcat:2.3.8.RELEASE]/[org.apache.tomcat.embed:tomcat-embed-websocket:9.0.41]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                }
+              ],
+              "indirect_vulnerabilities": 13
+            },
+            {
+              "vendor": "org.springframework",
+              "name": "spring-web",
+              "version": "5.2.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907284",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-web:5.2.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Spring Framework 权限提升漏洞",
+                  "id": "XMIRROR-E5B71412-91C90F95",
+                  "cve_id": "CVE-2021-22118",
+                  "cnnvd_id": "CNNVD-202105-1663",
+                  "cnvd_id": "CNVD-2021-44961",
+                  "cwe_id": "CWE-269 CWE-668",
+                  "description": "在Spring Framework的5.2.x版本（低于5.2.15）和5.3.x版本（低于5.3.7）中，WebFlux应用程序存在权限提升漏洞。本地认证的恶意用户可以通过（重新）创建临时存储目录来读取或修改上传到WebFlux应用程序的文件，或使用multipart请求数据覆盖任意文件。",
+                  "suggestion": "建议尽快将Spring Framework升级到修复后的版本。对于5.2.x版本，应升级至5.2.15或更高版本；对于5.3.x版本，应升级至5.3.7或更高版本。",
+                  "attack_type": "本地",
+                  "release_date": "2021-05-25",
+                  "security_level_id": 2,
+                  "exploit_level_id": 0
+                },
+                {
+                  "name": "Spring Framework 远程代码执行漏洞",
+                  "id": "XMIRROR-E5F72218-15B91995",
+                  "cve_id": "CVE-2016-1000027",
+                  "cnnvd_id": "CNNVD-202001-046",
+                  "cnvd_id": "CNVD-2020-03821",
+                  "cwe_id": "CWE-502",
+                  "description": "\u003cp\u003eSpring Framework 在5.3.16版本及之前版本中，如果用于对不可信数据进行Java反序列化，存在潜在的远程代码执行（RCE）问题。根据库在产品中的实现方式，这个问题可能发生也可能不发生，且可能需要身份验证。需要注意的是，供应商认为不可信数据并非预期使用场景。由于一些用户依赖于对可信数据的反序列化，因此产品的行为不会更改。\u003c/p\u003e",
+                  "suggestion": "\u003cp\u003e用户应及时升级到最新版本以避免此漏洞的威胁。如果无法立即更新，可以通过以下方式缓解风险：限制反序列化流中可以接受的数据类型；对反序列化的数据进行严格的校验和过滤；确保反序列化操作在安全环境下进行，例如受信任的用户输入或者受控的内部数据交换。\u003c/p\u003e",
+                  "attack_type": "远程",
+                  "release_date": "2020-01-02",
+                  "security_level_id": 1,
+                  "exploit_level_id": 1
+                },
+                {
+                  "name": "Spring Framework 安全漏洞",
+                  "id": "XMIRROR-E5B714EF-14320795",
+                  "cve_id": "CVE-2024-22262",
+                  "cnnvd_id": "CNNVD-202404-2193",
+                  "cwe_id": "CWE-601 CWE-918",
+                  "description": "Spring Framework是美国Spring团队的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nSpring Framework存在安全漏洞，该漏洞源于容易受到开放重定向的攻击或服务器端请求伪造(SSRF)攻击。",
+                  "suggestion": "## Remediation\nUpgrade `org.springframework:spring-web` to version 5.3.34, 6.0.19, 6.1.6 or higher.",
+                  "attack_type": "远程",
+                  "release_date": "2024-04-12",
+                  "security_level_id": 2,
+                  "exploit_level_id": 1
+                },
+                {
+                  "name": "VMware Spring Framework 拒绝服务 (DoS) 漏洞",
+                  "id": "XMIRROR-E5B714EF-1449FD95",
+                  "cve_id": "CVE-2024-38809",
+                  "cnnvd_id": "CNNVD-202409-2323",
+                  "cwe_id": "CWE-400",
+                  "description": "VMware Spring Framework 是美国威睿（VMware）公司的一套开源的 Java、JavaEE 应用程序框架，旨在帮助开发人员构建高质量的应用。该框架的安全漏洞源于在解析请求头中的 ETags 时，容易受到拒绝服务攻击。受影响的版本包括：6.1.0至6.1.11版本、6.0.0至6.0.22版本和5.3.0至5.3.37版本。攻击者可以通过发送特制的 HTTP 请求，触发该漏洞，导致应用程序无法正常服务。",
+                  "suggestion": "建议立即升级到最新版本，具体为：将 6.1.x 升级到 6.1.12，将 6.0.x 升级到 6.0.23，将 5.3.x 升级到 5.3.38。如果使用较旧的、不再支持的版本，请通过过滤器强制实施对 'If-Match' 和 'If-None-Match' 请求头的大小限制，以防止此类攻击。",
+                  "attack_type": "远程",
+                  "release_date": "2024-08-15",
+                  "security_level_id": 3,
+                  "exploit_level_id": 2
+                },
+                {
+                  "name": "Spring Framework Open Redirect 和 SSRF 漏洞",
+                  "id": "XMIRROR-E5B714EF-1432FA95",
+                  "cve_id": "CVE-2024-22243",
+                  "cnnvd_id": "CNNVD-202402-1929",
+                  "cwe_id": "CWE-601",
+                  "description": "Spring Framework是一个开源的Java企业应用程序框架，旨在简化Java开发的复杂性。CVE-2024-22243是一个影响Spring Framework的严重安全漏洞，主要影响版本为5.3.0到5.3.31、6.0.0到6.0.16、6.1.0到6.1.3。漏洞的根源在于UriComponentsBuilder类在处理URL解析时的不足，特别是在解析URL的userinfo部分时，Spring的URL解析行为与其他常见库和现代浏览器不同，这可能导致出现重定向绕过（Open Redirect）和服务器端请求伪造（SSRF）。",
+                  "suggestion": "立即升级到Spring Framework的最新修补版本。此外，审核使用UriComponentsBuilder类生成的URL的代码，确保其在使用前经过适当的验证和净化。限制外部网络请求及其目标的可达性，添加防御机制以检测和防止异常请求流量。",
+                  "attack_type": "远程",
+                  "release_date": "2024-02-22",
+                  "security_level_id": 2,
+                  "exploit_level_id": 0
+                },
+                {
+                  "name": "Spring Framework UriComponentsBuilder 高危漏洞",
+                  "id": "XMIRROR-E5B714EF-14324E95",
+                  "cve_id": "CVE-2024-22259",
+                  "cnnvd_id": "CNNVD-202403-1543",
+                  "cwe_id": "CWE-601",
+                  "description": "CVE-2024-22259 是 Spring Framework 的 UriComponentsBuilder 类的一个高危漏洞，影响 6.1.0 至 6.1.4、6.0.0 至 6.0.17 以及 5.3.0 至 5.3.32 版本。当外部提供的 URL 被解析且主机验证不正确时，此漏洞可使应用程序暴露于开放重定向和服务器端请求伪造 (SSRF) 攻击中。问题根源在于 UriComponentsBuilder 在处理 URL 解析和验证时，未能正确处理带有 '@' 符号的恶意 URL，从而绕过主机验证。",
+                  "suggestion": "建议立即将 Spring Framework 升级到已修复此漏洞的版本：6.1.5、6.0.18 或 5.3.33。此外，开发者应确保对用户输入进行严格验证，并考虑使用 Java 的 java.net.URI 类进行 URL 解析，以提供更健壮的处理。",
+                  "attack_type": "远程",
+                  "release_date": "2024-03-15",
+                  "security_level_id": 2,
+                  "exploit_level_id": 0
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.springframework",
+                  "name": "spring-beans",
+                  "version": "5.2.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907331",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-web:5.2.12.RELEASE]/[org.springframework:spring-beans:5.2.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Spring Framework 拒绝服务漏洞",
+                      "id": "XMIRROR-E5B714FC-FE4CAF95",
+                      "cve_id": "CVE-2022-22970",
+                      "cnnvd_id": "CNNVD-202205-2988",
+                      "cwe_id": "CWE-770",
+                      "description": "Spring Framework 是由 Rod Johnson 创建的一个开源 Java 企业应用程序框架，用于简化 Java 开发的复杂性。此漏洞存在于处理文件上传的 Spring MVC 或 Spring WebFlux 应用程序中。当应用程序通过数据绑定将上传的文件（使用 MultipartFile 或 javax.servlet.Part）映射到模型对象的字段时，可能引发这个问题。攻击者可以利用这一点造成拒绝服务（DoS）状态，导致系统资源耗尽。受影响的版本包括 5.3.0 到 5.3.19 及 5.2.0 到 5.2.21 之间的版本以及更早的不受支持的版本。",
+                      "suggestion": "建议立即升级到已修复此漏洞的版本：5.3.20 及以后版本，或 5.2.22 及以后版本。对于使用不受支持或旧版本的应用程序，建议迁移到上述较新版本。",
+                      "attack_type": "远程",
+                      "release_date": "2022-05-11",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "indirect_vulnerabilities": 1
+                }
+              ],
+              "indirect_vulnerabilities": 7
+            },
+            {
+              "vendor": "org.springframework",
+              "name": "spring-webmvc",
+              "version": "5.2.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907285",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-webmvc:5.2.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Spring Framework 远程代码执行漏洞",
+                  "id": "XMIRROR-E5B714FC-FE4C4195",
+                  "cve_id": "CVE-2022-22965",
+                  "cnnvd_id": "CNNVD-202203-2514",
+                  "cnvd_id": "CNVD-2022-31186",
+                  "cwe_id": "CWE-94",
+                  "description": "该漏洞影响运行在JDK 9+上的Spring MVC或Spring WebFlux应用程序。当应用程序作为WAR部署在Tomcat上时，攻击者可能通过数据绑定进行远程代码执行（RCE）。如果应用程序以Spring Boot可执行JAR（默认部署方式）部署，则不受此漏洞影响。",
+                  "suggestion": "立即升级到Spring Framework的最新版本，或应用官方提供的临时修复措施。如果无法立即升级，建议采取以下措施：限制对受影响端点的访问，升级JDK版本到16或更高版本，或使用Spring Boot的默认部署方式（即执行JAR部署）。",
+                  "attack_type": "远程",
+                  "release_date": "2022-03-30",
+                  "security_level_id": 1,
+                  "exploit_level_id": 0
+                },
+                {
+                  "name": "Spring框架路径遍历漏洞",
+                  "id": "XMIRROR-E5B714EF-144C9395",
+                  "cve_id": "CVE-2024-38819",
+                  "cnnvd_id": "CNNVD-202410-3593",
+                  "cwe_id": "CWE-22",
+                  "description": "CVE-2024-38819 是影响使用 Spring 框架的应用程序的关键安全漏洞，尤其是那些利用功能性 Web 框架 WebMvc.fn 或 WebFlux.fn 提供静态资源的应用。该漏洞的根本原因是输入验证不足，允许攻击者通过构造恶意的 HTTP 请求来绕过标准路径限制，从而获得未授权的文件访问。漏洞细节涉及双重 URL 编码问题，攻击者可以操纵 URL 编码以遍历目录路径，从而获得应用程序进程能够访问的敏感文件，例如配置文件和用户数据。",
+                  "suggestion": "建议立即将 Spring 框架更新到修复漏洞的最新版本，并加强输入验证机制，确保严格审查用户输入的文件路径。定期进行安全审计和测试，监测系统以发现异常访问模式或未授权的文件访问。",
+                  "attack_type": "远程",
+                  "release_date": "2024-10-17",
+                  "security_level_id": 2,
+                  "exploit_level_id": 1
+                },
+                {
+                  "name": "Spring框架拒绝服务漏洞",
+                  "id": "XMIRROR-E5B714EF-144CED95",
+                  "cve_id": "CVE-2024-38828",
+                  "cnnvd_id": "CNNVD-202411-2241",
+                  "cwe_id": "CWE-400",
+                  "description": "Spring Framework 是由 VMware 公司开发的一套开源 Java 企业级应用框架，旨在简化 Java 开发的复杂性。该框架在处理 Web 请求时，允许开发者使用 `@RequestBody` 注解将 HTTP 请求体直接映射为方法参数。存在一个安全漏洞，当 Spring MVC 控制器方法的参数类型为 `byte[]` 且使用了 `@RequestBody` 注解时，攻击者可以通过发送特制的 HTTP 请求，导致服务器资源耗尽，从而引发拒绝服务攻击。",
+                  "suggestion": "应立即审查所有使用 `@RequestBody` 注解且参数为 `byte[]` 类型的方法，避免直接接收过大的请求体；同时，建议升级到包含此漏洞修复的最新版本的 Spring Framework，以获得永久的修复。此外，可以设置请求体大小限制，作为临时缓解措施。",
+                  "attack_type": "远程",
+                  "release_date": "2024-11-18",
+                  "security_level_id": 3,
+                  "exploit_level_id": 1
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.springframework",
+                  "name": "spring-aop",
+                  "version": "5.2.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907332",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-webmvc:5.2.12.RELEASE]/[org.springframework:spring-aop:5.2.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.springframework",
+                  "name": "spring-context",
+                  "version": "5.2.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907333",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-webmvc:5.2.12.RELEASE]/[org.springframework:spring-context:5.2.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "VMware Spring Framework 安全漏洞",
+                      "id": "XMIRROR-E5B714EF-144C2A95",
+                      "cve_id": "CVE-2024-38820",
+                      "cnnvd_id": "CNNVD-202410-1928",
+                      "cwe_id": "CWE-178",
+                      "description": "VMware Spring Framework是美国威睿（VMware）公司的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nVMware Spring Framework存在安全漏洞，该漏洞源于区分大小写的匹配异常，这些异常可能导致字段未按预期受到保护。",
+                      "suggestion": "## Remediation\nUpgrade `org.springframework:spring-websocket` to version 6.1.14 or higher.",
+                      "attack_type": "远程",
+                      "release_date": "2024-10-18",
+                      "security_level_id": 4,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "Spring Framework 数据绑定规则漏洞",
+                      "id": "XMIRROR-E5B714FC-FE4C7795",
+                      "cve_id": "CVE-2022-22968",
+                      "cnnvd_id": "CNNVD-202204-3302",
+                      "cwe_id": "CWE-178",
+                      "description": "CVE-2022-22968 是 Spring Framework 中的一个漏洞，源于数据绑定规则中对大小写敏感性的处理不当。具体来说，问题在于 Spring Framework 版本 5.3.0 到 5.3.18 和 5.2.0 到 5.2.20 中的 DataBinder 如何管理 disallowedFields 模式。这些模式是区分大小写的，这意味着字段未完全受到保护，除非明确列出了每个字段的首字母的大小写。这包括属性路径中的嵌套字段。攻击者可能利用此漏洞绕过数据绑定限制并执行未经授权的操作。",
+                      "suggestion": "Spring Framework 团队已在版本 5.3.19 和 5.2.21 中解决了此问题，建议用户升级到这些版本以减轻风险。此外，建议审查并更新数据绑定配置以确保涵盖所有潜在向量。",
+                      "attack_type": "远程",
+                      "release_date": "2022-04-13",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "VMware Spring Framework 输入验证错误漏洞",
+                      "id": "XMIRROR-E5B714FA-AE563695",
+                      "cve_id": "CVE-2025-22233",
+                      "cnnvd_id": "CNNVD-202505-2590",
+                      "cwe_id": "CWE-20",
+                      "description": "VMware Spring Framework是美国威睿（VMware）公司的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nVMware Spring Framework 6.2.0至6.2.6版本、6.1.0至6.1.19版本、6.0.0至6.0.27版本和5.3.0至5.3.42版本存在安全漏洞，该漏洞源于可能绕过disallowedFields检查。",
+                      "suggestion": "## Remediation\nUpgrade `org.springframework:spring-context` to version 6.1.20, 6.2.7 or higher.",
+                      "attack_type": "远程",
+                      "release_date": "2025-05-16",
+                      "security_level_id": 4,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "indirect_vulnerabilities": 3
+                },
+                {
+                  "vendor": "org.springframework",
+                  "name": "spring-expression",
+                  "version": "5.2.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907334",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-web:2.3.8.RELEASE]/[org.springframework:spring-webmvc:5.2.12.RELEASE]/[org.springframework:spring-expression:5.2.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Spring Framework 拒绝服务漏洞",
+                      "id": "XMIRROR-E5B714FC-FE4C3195",
+                      "cve_id": "CVE-2022-22950",
+                      "cnnvd_id": "CNNVD-202203-2333",
+                      "cnvd_id": "CNVD-2022-34640",
+                      "cwe_id": "CWE-770",
+                      "description": "在Spring Framework版本5.3.0到5.3.16，5.2.0到5.2.19及更早的未受支持版本中，攻击者可以提供一个特制的SpEL表达式，可能导致拒绝服务（DoS）条件。",
+                      "suggestion": "用户应将受影响版本升级到Spring Framework 5.3.17及以上版本，或5.2.20及以上版本。没有其他必要步骤。",
+                      "attack_type": "远程",
+                      "release_date": "2022-03-28",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Spring Framework 安全漏洞",
+                      "id": "XMIRROR-E5B7141B-88C18A95",
+                      "cve_id": "CVE-2023-20863",
+                      "cnnvd_id": "CNNVD-202304-1094",
+                      "cwe_id": "CWE-400 CWE-917",
+                      "description": "Spring Framework是美国Spring团队的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nSpring Framework存在安全漏洞，该漏洞源于通过提供特制的 SpEL 表达式会导致拒绝服务 (DoS) 。受影响的产品和版本：spring framework 5.2.24 release及之前版本，5.3.27及之前版本， 6.0.8及之前版本。",
+                      "suggestion": "更新方案： \u003cp\u003e厂商已发布了漏洞修复程序，请使用此产品的用户尽快更新至安全版本\u003c/p\u003e\n",
+                      "attack_type": "远程",
+                      "release_date": "2023-04-13",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Spring Framework 安全漏洞",
+                      "id": "XMIRROR-E5B7141B-88C15B95",
+                      "cve_id": "CVE-2023-20861",
+                      "cnnvd_id": "CNNVD-202303-1917",
+                      "cwe_id": "CWE-400",
+                      "description": "Spring Framework是美国Spring团队的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nSpring Framework 6.0.0 到 6.0.6、5.3.0 到 5.3.25、5.2.0 到 5.2.22版本以及不受支持得版本存在安全漏洞，该漏洞源于用户提供的特制 SpEL 表达式可能会导致拒绝服务 (DoS) 。",
+                      "suggestion": "更新方案： \u003cp\u003e厂商已发布了漏洞修复程序，请使用此产品的用户尽快更新至安全版本\u003c/p\u003e\n",
+                      "attack_type": "远程",
+                      "release_date": "2023-03-21",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    },
+                    {
+                      "name": "Spring Framework 安全漏洞",
+                      "id": "XMIRROR-E5B714EF-14497C95",
+                      "cve_id": "CVE-2024-38808",
+                      "cnnvd_id": "CNNVD-202408-1848",
+                      "cwe_id": "CWE-770",
+                      "description": "VMware Spring Framework是美国威睿（VMware）公司的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nSpring Framework 5.3.0版本至5.3.38版本存在安全漏洞，该漏洞源于用户可能会提供特制的SpEL表达式，可能会导致拒绝服务(DoS)。",
+                      "suggestion": "## Remediation\nUpgrade `org.springframework:spring-expression` to version 5.3.39 or higher.",
+                      "attack_type": "远程",
+                      "release_date": "2024-08-15",
+                      "security_level_id": 3,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "indirect_vulnerabilities": 4
+                }
+              ],
+              "indirect_vulnerabilities": 10
+            }
+          ],
+          "indirect_vulnerabilities": 37
+        },
+        {
+          "vendor": "org.springframework.session",
+          "name": "spring-session-core",
+          "version": "2.3.1.RELEASE",
+          "language": "Java",
+          "id": "57714621344907269",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.session:spring-session-core:2.3.1.RELEASE]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "org.springframework",
+              "name": "spring-jcl",
+              "version": "5.2.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907286",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.session:spring-session-core:2.3.1.RELEASE]/[org.springframework:spring-jcl:5.2.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vendor": "org.mybatis.spring.boot",
+          "name": "mybatis-spring-boot-starter",
+          "version": "2.1.3",
+          "language": "Java",
+          "id": "57714621344907270",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-starter-jdbc",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907287",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.springframework.boot:spring-boot-starter-jdbc:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "com.zaxxer",
+                  "name": "HikariCP",
+                  "version": "3.4.5",
+                  "language": "Java",
+                  "id": "57714621344907335",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.springframework.boot:spring-boot-starter-jdbc:2.3.8.RELEASE]/[com.zaxxer:HikariCP:3.4.5]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "The Apache Software License, Version 2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.springframework",
+                  "name": "spring-jdbc",
+                  "version": "5.2.12.RELEASE",
+                  "language": "Java",
+                  "id": "57714621344907336",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.springframework.boot:spring-boot-starter-jdbc:2.3.8.RELEASE]/[org.springframework:spring-jdbc:5.2.12.RELEASE]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "org.springframework",
+                      "name": "spring-tx",
+                      "version": "5.2.12.RELEASE",
+                      "language": "Java",
+                      "id": "57714621344907358",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.springframework.boot:spring-boot-starter-jdbc:2.3.8.RELEASE]/[org.springframework:spring-jdbc:5.2.12.RELEASE]/[org.springframework:spring-tx:5.2.12.RELEASE]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.mybatis.spring.boot",
+              "name": "mybatis-spring-boot-autoconfigure",
+              "version": "2.1.3",
+              "language": "Java",
+              "id": "57714621344907288",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.3]"
+              ]
+            },
+            {
+              "vendor": "org.mybatis",
+              "name": "mybatis",
+              "version": "3.5.5",
+              "language": "Java",
+              "id": "57714621344907289",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.mybatis:mybatis:3.5.5]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "MyBatis 远程代码执行漏洞",
+                  "id": "XMIRROR-E5B71403-AFA30095",
+                  "cve_id": "CVE-2020-26945",
+                  "cnnvd_id": "CNNVD-202010-384",
+                  "cnvd_id": "CNVD-2020-55776",
+                  "cwe_id": "CWE-502",
+                  "description": "\u003cp\u003e该漏洞存在于 MyBatis 对象流的反序列化处理不当。攻击者可以通过发送恶意构造的数据流，利用 MyBatis 的二级缓存功能在反序列化过程中执行任意代码。\u003c/p\u003e",
+                  "suggestion": "\u003cp\u003e立即升级到 MyBatis 的最新版本 3.5.6。如果无法立即升级，建议禁用二级缓存功能，或采取官方提供的临时修复措施，并限制对受影响端点的访问。\u003c/p\u003e",
+                  "attack_type": "远程",
+                  "release_date": "2020-10-10",
+                  "security_level_id": 2,
+                  "exploit_level_id": 0
+                }
+              ],
+              "indirect_vulnerabilities": 1
+            },
+            {
+              "vendor": "org.mybatis",
+              "name": "mybatis-spring",
+              "version": "2.0.5",
+              "language": "Java",
+              "id": "57714621344907290",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3]/[org.mybatis:mybatis-spring:2.0.5]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            }
+          ],
+          "indirect_vulnerabilities": 1
+        },
+        {
+          "vendor": "commons-fileupload",
+          "name": "commons-fileupload",
+          "version": "1.4",
+          "language": "Java",
+          "id": "57714621344907271",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[commons-fileupload:commons-fileupload:1.4]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "vulnerabilities": [
+            {
+              "name": "Apache Commons FileUpload 拒绝服务漏洞",
+              "id": "XMIRROR-E5B7141B-88B23195",
+              "cve_id": "CVE-2023-24998",
+              "cnnvd_id": "CNNVD-202302-1610",
+              "cnvd_id": "CNVD-2023-23552",
+              "cwe_id": "CWE-770",
+              "description": "Apache Commons FileUpload 是一个用于处理文件上传请求的开源 Java 库，提供简单的文件上传功能。在 1.5 版本之前，该组件没有限制要处理的请求部分数量，因此导致了潜在的拒绝服务攻击。攻击者可以通过恶意上传或进行系列上传操作触发此漏洞，导致服务不可用。",
+              "suggestion": "建议立即升级到 Apache Commons FileUpload 1.5 或更高版本，以修复此漏洞。临时缓解措施包括限制请求的部分数量以及对上传的文件大小进行合理控制。此外，应实施良好的输入验证和流量监控，以防止类似的拒绝服务攻击。",
+              "attack_type": "远程",
+              "release_date": "2023-02-20",
+              "security_level_id": 2,
+              "exploit_level_id": 0
+            }
+          ],
+          "indirect_vulnerabilities": 1
+        },
+        {
+          "vendor": "commons-io",
+          "name": "commons-io",
+          "version": "2.6",
+          "language": "Java",
+          "id": "57714621344907272",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[commons-io:commons-io:2.6]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "vulnerabilities": [
+            {
+              "name": "Apache Commons IO 资源管理错误漏洞",
+              "id": "XMIRROR-E5B714EF-142CCB95",
+              "cve_id": "CVE-2024-47554",
+              "cnnvd_id": "CNNVD-202410-209",
+              "cwe_id": "CWE-400",
+              "description": "Apache Commons IO是美国阿帕奇（Apache）基金会的一个应用程序。提供一个帮助开发IO功能。\r\nApache Commons IO 2.0版本至2.14.0之前版本存在资源管理错误漏洞，该漏洞源于CPU资源消耗不受控制。",
+              "suggestion": "## Remediation\nUpgrade `commons-io:commons-io` to version 2.14.0 or higher.",
+              "attack_type": "远程",
+              "release_date": "2024-10-03",
+              "security_level_id": 3,
+              "exploit_level_id": 0
+            }
+          ],
+          "indirect_vulnerabilities": 1
+        },
+        {
+          "vendor": "com.github.whvcse",
+          "name": "easy-captcha",
+          "version": "1.6.2",
+          "language": "Java",
+          "id": "57714621344907273",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[com.github.whvcse:easy-captcha:1.6.2]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ]
+        },
+        {
+          "vendor": "mysql",
+          "name": "mysql-connector-java",
+          "version": "8.0.22",
+          "language": "Java",
+          "id": "57714621344907274",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[mysql:mysql-connector-java:8.0.22]"
+          ],
+          "licenses": [
+            {
+              "name": "GPL-2.0-only"
+            }
+          ],
+          "vulnerabilities": [
+            {
+              "name": "Oracle MySQL 输入验证错误漏洞",
+              "id": "XMIRROR-E5B70F6D-CF739C95",
+              "cve_id": "CVE-2021-2471",
+              "cnnvd_id": "CNNVD-202110-1335",
+              "cnvd_id": "CNVD-2021-89938",
+              "cwe_id": "CWE-863",
+              "description": "Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Connectors是其中的一个连接使用MySQL的应用程序的驱动程序。\r\nOracle MySQL 的 MySQL Connectors 产品中存在输入验证错误漏洞，该漏洞允许高特权攻击者通过多种协议访问网络来破坏 MySQL 连接器。成功攻击此漏洞会导致对关键数据的未授权访问或对所有 MySQL 连接器可访问数据的完全访问，以及导致 MySQL 连接器挂起或频繁重复崩溃。",
+              "suggestion": "通用方案： 目前厂商已发布升级补丁以修复漏洞，补丁获取链接： https://www.oracle.com/security-alerts/cpuoct2021.html\n",
+              "attack_type": "远程",
+              "release_date": "2021-10-19",
+              "security_level_id": 3,
+              "exploit_level_id": 0
+            },
+            {
+              "name": "MySQL Connector/J Improper Authorization Vulnerability",
+              "id": "XMIRROR-E5B714FC-FE4B4E95",
+              "cve_id": "CVE-2022-21363",
+              "cnnvd_id": "CNNVD-202201-1627",
+              "cnvd_id": "CNVD-2022-15473",
+              "cwe_id": "CWE-285",
+              "description": "\u003cp\u003eMySQL Connector/J 是 MySQL 数据库的 Java 数据库连接 (JDBC) 驱动程序，用于在 Java 应用程序中与 MySQL 数据库通信。CVE-2022-21363 是 Oracle MySQL Connector/J 组件 (版本 8.0.27 及更早版本) 中存在的一个中危漏洞。该漏洞源于 MysqlSQLXML::getSource() 函数中的不当授权检查，攻击者可以利用该漏洞绕过某些安全限制，可能会获得未授权的资源访问或导致 MySQL 连接器崩溃。\u003c/p\u003e",
+              "suggestion": "\u003cp\u003e立即将 MySQL Connector/J 升级到 8.0.28 或更高版本。此外，建议实施常规的安全增强措施，例如限制特权访问，使用安全的网络配置，并监控连接器日志中的任何可疑活动。\u003c/p\u003e",
+              "attack_type": "远程",
+              "release_date": "2022-01-19",
+              "security_level_id": 3,
+              "exploit_level_id": 0
+            }
+          ],
+          "indirect_vulnerabilities": 2
+        },
+        {
+          "vendor": "io.springfox",
+          "name": "springfox-swagger-ui",
+          "version": "2.7.0",
+          "language": "Java",
+          "id": "57714621344907275",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger-ui:2.7.0]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "io.springfox",
+              "name": "springfox-spring-web",
+              "version": "2.7.0",
+              "language": "Java",
+              "id": "57714621344907291",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger-ui:2.7.0]/[io.springfox:springfox-spring-web:2.7.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.reflections",
+                  "name": "reflections",
+                  "version": "0.9.11",
+                  "language": "Java",
+                  "id": "57714621344907337",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger-ui:2.7.0]/[io.springfox:springfox-spring-web:2.7.0]/[org.reflections:reflections:0.9.11]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "WTFPL"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "org.javassist",
+                      "name": "javassist",
+                      "version": "3.21.0-GA",
+                      "language": "Java",
+                      "id": "57714621344907359",
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger-ui:2.7.0]/[io.springfox:springfox-spring-web:2.7.0]/[org.reflections:reflections:0.9.11]/[org.javassist:javassist:3.21.0-GA]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "MPL-1.1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vendor": "io.springfox",
+          "name": "springfox-swagger2",
+          "version": "2.7.0",
+          "language": "Java",
+          "id": "57714621344907276",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "io.swagger",
+              "name": "swagger-annotations",
+              "version": "1.5.13",
+              "language": "Java",
+              "id": "57714621344907292",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.swagger:swagger-annotations:1.5.13]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "io.swagger",
+              "name": "swagger-models",
+              "version": "1.5.13",
+              "language": "Java",
+              "id": "57714621344907293",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.swagger:swagger-models:1.5.13]"
+              ],
+              "children": [
+                {
+                  "vendor": "com.fasterxml.jackson.core",
+                  "name": "jackson-annotations",
+                  "version": "2.11.4",
+                  "language": "Java",
+                  "id": "57714621344907338",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.swagger:swagger-models:1.5.13]/[com.fasterxml.jackson.core:jackson-annotations:2.11.4]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "io.springfox",
+              "name": "springfox-spi",
+              "version": "2.7.0",
+              "language": "Java",
+              "id": "57714621344907294",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.springfox:springfox-spi:2.7.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "io.springfox",
+                  "name": "springfox-core",
+                  "version": "2.7.0",
+                  "language": "Java",
+                  "id": "57714621344907339",
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.springfox:springfox-spi:2.7.0]/[io.springfox:springfox-core:2.7.0]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "io.springfox",
+              "name": "springfox-schema",
+              "version": "2.7.0",
+              "language": "Java",
+              "id": "57714621344907295",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.springfox:springfox-schema:2.7.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "io.springfox",
+              "name": "springfox-swagger-common",
+              "version": "2.7.0",
+              "language": "Java",
+              "id": "57714621344907296",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[io.springfox:springfox-swagger-common:2.7.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "com.google.guava",
+              "name": "guava",
+              "version": "18.0",
+              "language": "Java",
+              "id": "57714621344907297",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[com.google.guava:guava:18.0]"
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Google Guava FileBackedOutputStream 默认临时目录文件创建漏洞",
+                  "id": "XMIRROR-E5B70F55-9A255695",
+                  "cve_id": "CVE-2023-2976",
+                  "cnnvd_id": "CNNVD-202306-1141",
+                  "cwe_id": "CWE-552",
+                  "description": "Google Guava库中的FileBackedOutputStream在Unix系统和Android Ice Cream Sandwich中使用Java的默认临时目录来创建文件，这允许机器上具有访问默认Java临时目录权限的其他用户和应用程序访问该类创建的文件。",
+                  "suggestion": "用户应立即升级到Google Guava版本32.0.1以修复此漏洞。虽然32.0.0版本也修复了该安全问题，但是它会在Windows系统上导致某些功能异常。在升级之前，用户应该确保他们的应用程序兼容新版本，并遵循最佳实践，比如不在默认临时目录中存储敏感信息，以及在创建临时文件时设置适当的权限。",
+                  "attack_type": "本地",
+                  "release_date": "2023-06-14",
+                  "security_level_id": 3,
+                  "exploit_level_id": 0
+                },
+                {
+                  "name": "Guava 创建临时目录漏洞",
+                  "id": "XMIRROR-E5B70FBE-53AB5895",
+                  "cve_id": "CVE-2020-8908",
+                  "cnnvd_id": "CNNVD-202012-827",
+                  "cnvd_id": "CNVD-2021-31252",
+                  "cwe_id": "CWE-378 CWE-732",
+                  "description": "Guava所有版本中存在一个临时目录创建漏洞，该漏洞允许具有机器访问权限的攻击者可能访问由Guava API com.google.common.io.Files.createTempDir()创建的临时目录中的数据。在默认情况下，在类Unix系统中，创建的目录是全局可读的（攻击者只要有系统访问权限就可以读取）。该问题方法在30.0版本及以后已被标记为@Deprecated，并且不应当被使用。",
+                  "suggestion": "对于Android开发者，建议使用Android提供的临时目录API，如context.getCacheDir()。对于其他Java开发者，建议迁移到Java 7 API java.nio.file.Files.createTempDirectory()，它明确配置了700的权限，或者配置Java运行时的java.io.tmpdir系统属性，使其指向权限配置适当的位置。",
+                  "attack_type": "本地",
+                  "release_date": "2020-10-23",
+                  "security_level_id": 4,
+                  "exploit_level_id": 0
+                }
+              ],
+              "indirect_vulnerabilities": 2
+            },
+            {
+              "vendor": "com.fasterxml",
+              "name": "classmate",
+              "version": "1.5.1",
+              "language": "Java",
+              "id": "57714621344907298",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[com.fasterxml:classmate:1.5.1]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.slf4j",
+              "name": "slf4j-api",
+              "version": "1.7.30",
+              "language": "Java",
+              "id": "57714621344907299",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[org.slf4j:slf4j-api:1.7.30]"
+              ],
+              "licenses": [
+                {
+                  "name": "MIT"
+                }
+              ]
+            },
+            {
+              "vendor": "org.springframework.plugin",
+              "name": "spring-plugin-core",
+              "version": "1.2.0.RELEASE",
+              "language": "Java",
+              "id": "57714621344907300",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.springframework.plugin",
+              "name": "spring-plugin-metadata",
+              "version": "1.2.0.RELEASE",
+              "language": "Java",
+              "id": "57714621344907301",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.mapstruct",
+              "name": "mapstruct",
+              "version": "1.1.0.Final",
+              "language": "Java",
+              "id": "57714621344907302",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[io.springfox:springfox-swagger2:2.7.0]/[org.mapstruct:mapstruct:1.1.0.Final]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            }
+          ],
+          "indirect_vulnerabilities": 2
+        },
+        {
+          "vendor": "com.alipay.sdk",
+          "name": "alipay-sdk-java",
+          "version": "3.1.0",
+          "language": "Java",
+          "id": "57714621344907277",
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[com.alipay.sdk:alipay-sdk-java:3.1.0]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "commons-logging",
+              "name": "commons-logging",
+              "version": "1.1.1",
+              "language": "Java",
+              "id": "57714621344907303",
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[com.alipay.sdk:alipay-sdk-java:3.1.0]/[commons-logging:commons-logging:1.1.1]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vendor": "org.springframework.boot",
+          "name": "spring-boot-starter-test",
+          "version": "2.3.8.RELEASE",
+          "language": "Java",
+          "id": "57714621344907278",
+          "dev": true,
+          "direct": true,
+          "paths": [
+            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]"
+          ],
+          "licenses": [
+            {
+              "name": "Apache-2.0"
+            }
+          ],
+          "children": [
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-test",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907304",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-test:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.springframework.boot",
+              "name": "spring-boot-test-autoconfigure",
+              "version": "2.3.8.RELEASE",
+              "language": "Java",
+              "id": "57714621344907305",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.springframework.boot:spring-boot-test-autoconfigure:2.3.8.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "com.jayway.jsonpath",
+              "name": "json-path",
+              "version": "2.4.0",
+              "language": "Java",
+              "id": "57714621344907306",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[com.jayway.jsonpath:json-path:2.4.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Jayway JsonPath 安全漏洞",
+                  "id": "XMIRROR-E5B7141B-7C75F795",
+                  "cve_id": "CVE-2023-51074",
+                  "cnnvd_id": "CNNVD-202312-2349",
+                  "cwe_id": "CWE-404",
+                  "description": "Jayway JsonPath是json-path开源的一个用于读取 Json 文档的 Java DSL。\r\nJayway JsonPath v2.8.0版本存在安全漏洞，该漏洞源于Criteria.parse方法存在堆栈溢出漏洞。",
+                  "suggestion": "## Remediation\nUpgrade `com.jayway.jsonpath:json-path` to version 2.9.0 or higher.",
+                  "attack_type": "远程",
+                  "release_date": "2023-12-27",
+                  "security_level_id": 3,
+                  "exploit_level_id": 2
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "net.minidev",
+                  "name": "json-smart",
+                  "version": "2.3",
+                  "language": "Java",
+                  "id": "57714621344907340",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[com.jayway.jsonpath:json-path:2.4.0]/[net.minidev:json-smart:2.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ],
+                  "vulnerabilities": [
+                    {
+                      "name": "Github json-smart-v1 缓冲区错误漏洞",
+                      "id": "XMIRROR-E5B71412-ED441595",
+                      "cve_id": "CVE-2021-31684",
+                      "cnnvd_id": "CNNVD-202106-103",
+                      "cwe_id": "CWE-787",
+                      "description": "Github json-smart-v1是Github开源的一个应用软件。提供数据存储中的所有非索引数据都作为序列化的 JSON 消息存储在列中功能。\r\nJSON Smart 1.3 和 2.4 版本存在安全漏洞，该漏洞源于JSONParserByteArray的indexOf函数，攻击者可利用该漏洞通过精心制作的web请求导致拒绝服务。以下产品和版本受到影响：Nextcloud Server 19.0.11、20.0.10或21.0.2之前的版本。",
+                      "suggestion": "## Remediation\nUpgrade `net.minidev:json-smart` to version 1.3.3, 2.4.5 or higher.",
+                      "attack_type": "远程",
+                      "release_date": "2021-06-01",
+                      "security_level_id": 2,
+                      "exploit_level_id": 2
+                    },
+                    {
+                      "name": "json-smart 递归解析漏洞",
+                      "id": "XMIRROR-E5B70F55-9A13AA95",
+                      "cve_id": "CVE-2023-1370",
+                      "cnnvd_id": "CNNVD-202303-1658",
+                      "cwe_id": "CWE-674",
+                      "description": "json-smart 是一个高性能的 JSON 处理库。在解析 JSON 数组和对象时，该库未能限制嵌套深度，导致堆栈耗尽，最终可能导致应用程序崩溃（拒绝服务）。此漏洞的根本原因在于 json-smart 处理嵌套 JSON 结构的递归特性。攻击者可以通过提交具有超深嵌套级别的 JSON 输入来利用此漏洞，从而导致堆栈耗尽。",
+                      "suggestion": "1. 将 json-smart 库更新到修复了此递归问题的版本，这些版本在嵌套深度上实施了限制。2. 实现自定义的 JSON 解析器来限制嵌套 JSON 结构的深度。3. 考虑切换到其他 JSON 解析库，如 Jackson 或 Gson，它们内置了此类漏洞的保护措施。",
+                      "attack_type": "远程",
+                      "release_date": "2023-03-13",
+                      "security_level_id": 2,
+                      "exploit_level_id": 0
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "net.minidev",
+                      "name": "accessors-smart",
+                      "version": "1.2",
+                      "language": "Java",
+                      "id": "57714621344907360",
+                      "dev": true,
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[com.jayway.jsonpath:json-path:2.4.0]/[net.minidev:json-smart:2.3]/[net.minidev:accessors-smart:1.2]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "vendor": "org.ow2.asm",
+                          "name": "asm",
+                          "version": "5.0.4",
+                          "language": "Java",
+                          "id": "57714621344907365",
+                          "dev": true,
+                          "paths": [
+                            "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[com.jayway.jsonpath:json-path:2.4.0]/[net.minidev:json-smart:2.3]/[net.minidev:accessors-smart:1.2]/[org.ow2.asm:asm:5.0.4]"
+                          ],
+                          "licenses": [
+                            {
+                              "name": "BSD-3-Clause"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "indirect_vulnerabilities": 2
+                }
+              ],
+              "indirect_vulnerabilities": 3
+            },
+            {
+              "vendor": "jakarta.xml.bind",
+              "name": "jakarta.xml.bind-api",
+              "version": "2.3.3",
+              "language": "Java",
+              "id": "57714621344907307",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[jakarta.xml.bind:jakarta.xml.bind-api:2.3.3]"
+              ],
+              "children": [
+                {
+                  "vendor": "jakarta.activation",
+                  "name": "jakarta.activation-api",
+                  "version": "1.2.2",
+                  "language": "Java",
+                  "id": "57714621344907341",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[jakarta.xml.bind:jakarta.xml.bind-api:2.3.3]/[jakarta.activation:jakarta.activation-api:1.2.2]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "BSD-3-Clause"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.assertj",
+              "name": "assertj-core",
+              "version": "3.16.1",
+              "language": "Java",
+              "id": "57714621344907308",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.assertj:assertj-core:3.16.1]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.hamcrest",
+              "name": "hamcrest",
+              "version": "2.2",
+              "language": "Java",
+              "id": "57714621344907309",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.hamcrest:hamcrest:2.2]"
+              ],
+              "licenses": [
+                {
+                  "name": "BSD-3-Clause"
+                }
+              ]
+            },
+            {
+              "vendor": "org.junit.jupiter",
+              "name": "junit-jupiter",
+              "version": "5.6.3",
+              "language": "Java",
+              "id": "57714621344907310",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]"
+              ],
+              "licenses": [
+                {
+                  "name": "EPL-1.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.junit.jupiter",
+                  "name": "junit-jupiter-api",
+                  "version": "5.6.3",
+                  "language": "Java",
+                  "id": "57714621344907342",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]/[org.junit.jupiter:junit-jupiter-api:5.6.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-1.0"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "vendor": "org.opentest4j",
+                      "name": "opentest4j",
+                      "version": "1.2.0",
+                      "language": "Java",
+                      "id": "57714621344907361",
+                      "dev": true,
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]/[org.junit.jupiter:junit-jupiter-api:5.6.3]/[org.opentest4j:opentest4j:1.2.0]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "Apache-2.0"
+                        }
+                      ]
+                    },
+                    {
+                      "vendor": "org.junit.platform",
+                      "name": "junit-platform-commons",
+                      "version": "1.6.3",
+                      "language": "Java",
+                      "id": "57714621344907362",
+                      "dev": true,
+                      "paths": [
+                        "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]/[org.junit.jupiter:junit-jupiter-api:5.6.3]/[org.junit.platform:junit-platform-commons:1.6.3]"
+                      ],
+                      "licenses": [
+                        {
+                          "name": "EPL-1.0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.junit.jupiter",
+                  "name": "junit-jupiter-params",
+                  "version": "5.6.3",
+                  "language": "Java",
+                  "id": "57714621344907343",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]/[org.junit.jupiter:junit-jupiter-params:5.6.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-1.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.junit.jupiter",
+                  "name": "junit-jupiter-engine",
+                  "version": "5.6.3",
+                  "language": "Java",
+                  "id": "57714621344907344",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.jupiter:junit-jupiter:5.6.3]/[org.junit.jupiter:junit-jupiter-engine:5.6.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-1.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.junit.vintage",
+              "name": "junit-vintage-engine",
+              "version": "5.6.3",
+              "language": "Java",
+              "id": "57714621344907311",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.vintage:junit-vintage-engine:5.6.3]"
+              ],
+              "licenses": [
+                {
+                  "name": "EPL-1.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "org.apiguardian",
+                  "name": "apiguardian-api",
+                  "version": "1.1.0",
+                  "language": "Java",
+                  "id": "57714621344907345",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.vintage:junit-vintage-engine:5.6.3]/[org.apiguardian:apiguardian-api:1.1.0]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "org.junit.platform",
+                  "name": "junit-platform-engine",
+                  "version": "1.6.3",
+                  "language": "Java",
+                  "id": "57714621344907346",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.vintage:junit-vintage-engine:5.6.3]/[org.junit.platform:junit-platform-engine:1.6.3]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "EPL-1.0"
+                    }
+                  ]
+                },
+                {
+                  "vendor": "junit",
+                  "name": "junit",
+                  "version": "4.13.1",
+                  "language": "Java",
+                  "id": "57714621344907347",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.junit.vintage:junit-vintage-engine:5.6.3]/[junit:junit:4.13.1]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "CPL-1.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.mockito",
+              "name": "mockito-core",
+              "version": "3.3.3",
+              "language": "Java",
+              "id": "57714621344907312",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.mockito:mockito-core:3.3.3]"
+              ],
+              "licenses": [
+                {
+                  "name": "MIT"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "net.bytebuddy",
+                  "name": "byte-buddy",
+                  "version": "1.10.19",
+                  "language": "Java",
+                  "id": "57714621344907348",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.mockito:mockito-core:3.3.3]/[net.bytebuddy:byte-buddy:1.10.19]"
+                  ]
+                },
+                {
+                  "vendor": "net.bytebuddy",
+                  "name": "byte-buddy-agent",
+                  "version": "1.10.19",
+                  "language": "Java",
+                  "id": "57714621344907349",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.mockito:mockito-core:3.3.3]/[net.bytebuddy:byte-buddy-agent:1.10.19]"
+                  ]
+                },
+                {
+                  "vendor": "org.objenesis",
+                  "name": "objenesis",
+                  "version": "2.6",
+                  "language": "Java",
+                  "id": "57714621344907350",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.mockito:mockito-core:3.3.3]/[org.objenesis:objenesis:2.6]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "MIT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.mockito",
+              "name": "mockito-junit-jupiter",
+              "version": "3.3.3",
+              "language": "Java",
+              "id": "57714621344907313",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.mockito:mockito-junit-jupiter:3.3.3]"
+              ],
+              "licenses": [
+                {
+                  "name": "MIT"
+                }
+              ]
+            },
+            {
+              "vendor": "org.skyscreamer",
+              "name": "jsonassert",
+              "version": "1.5.0",
+              "language": "Java",
+              "id": "57714621344907314",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.skyscreamer:jsonassert:1.5.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "children": [
+                {
+                  "vendor": "com.vaadin.external.google",
+                  "name": "android-json",
+                  "version": "0.0.20131108.vaadin1",
+                  "language": "Java",
+                  "id": "57714621344907351",
+                  "dev": true,
+                  "paths": [
+                    "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.skyscreamer:jsonassert:1.5.0]/[com.vaadin.external.google:android-json:0.0.20131108.vaadin1]"
+                  ],
+                  "licenses": [
+                    {
+                      "name": "Apache-2.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "vendor": "org.springframework",
+              "name": "spring-core",
+              "version": "5.2.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907315",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.springframework:spring-core:5.2.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "Vmware Spring Framework 安全漏洞",
+                  "id": "XMIRROR-E5B71412-91C9ED95",
+                  "cve_id": "CVE-2021-22060",
+                  "cnnvd_id": "CNNVD-202201-454",
+                  "cnvd_id": "CNVD-2022-09799",
+                  "cwe_id": "CWE-20",
+                  "description": "Vmware Spring Framework是美国威睿（Vmware）公司的一套开源的Java、JavaEE应用程序框架。该框架可帮助开发人员构建高质量的应用。\r\nVmware Spring Framework存在安全漏洞，攻击者可利用该漏洞通过日志注入绕过Spring框架的访问限制从而修改数据。",
+                  "suggestion": "更新方案： \u003cp\u003e请使用此产品的用户尽快更新至安全版本，链接：https://github.com/spring-projects/spring-framework/releases\u003c/p\u003e\n",
+                  "attack_type": "远程",
+                  "release_date": "2022-01-06",
+                  "security_level_id": 3,
+                  "exploit_level_id": 0
+                },
+                {
+                  "name": "Spring Framework 安全漏洞",
+                  "id": "XMIRROR-E5B714FA-9AA79795",
+                  "cve_id": "CVE-2025-41249",
+                  "cnnvd_id": "CNNVD-202509-2565",
+                  "cwe_id": "CWE-285",
+                  "description": "Spring Framework是Spring开源的一款应用开发框架。\r\nSpring Framework存在安全漏洞，该漏洞源于注解检测机制无法正确解析泛型超类中的方法注解，可能导致授权决策错误。",
+                  "suggestion": "## Remediation\nUpgrade `org.springframework:spring-core` to version 6.2.11 or higher.",
+                  "attack_type": "远程",
+                  "release_date": "2025-09-16",
+                  "security_level_id": 2,
+                  "exploit_level_id": 2
+                }
+              ],
+              "indirect_vulnerabilities": 2
+            },
+            {
+              "vendor": "org.springframework",
+              "name": "spring-test",
+              "version": "5.2.12.RELEASE",
+              "language": "Java",
+              "id": "57714621344907316",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.springframework:spring-test:5.2.12.RELEASE]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "vendor": "org.xmlunit",
+              "name": "xmlunit-core",
+              "version": "2.7.0",
+              "language": "Java",
+              "id": "57714621344907317",
+              "dev": true,
+              "paths": [
+                "starsea-mall-master/pom.xml/[com.siro.mall:starsea-mall:0.0.1-SNAPSHOT]/[org.springframework.boot:spring-boot-starter-test:2.3.8.RELEASE]/[org.xmlunit:xmlunit-core:2.7.0]"
+              ],
+              "licenses": [
+                {
+                  "name": "Apache-2.0"
+                }
+              ],
+              "vulnerabilities": [
+                {
+                  "name": "XMLUnit-Core 任意代码执行漏洞",
+                  "id": "XMIRROR-E5B714EF-1435B195",
+                  "cve_id": "CVE-2024-31573",
+                  "cwe_id": "CWE-453",
+                  "description": "XMLUnit-Core 是一个用于测试 XML 的 Java 库，提供了通过 XSLT 或其他 XML 工具轻松进行 XML 比较和验证的功能。该组件在 TransformerFactoryConfigurer.java 中默认启用 XSLT 扩展转换功能，导致存在任意代码执行漏洞。当应用程序解析不受信任的 XSLT 文件时，攻击者可以利用该漏洞执行任意代码。",
+                  "suggestion": "立即禁用 XSLT 扩展转换功能或使用安全的 XSLT 处理器。升级到提供安全修复的 XMLUnit-Core 版本，并在接收和处理 XSLT 文件时进行严格验证。建议对第三方代码和库进行定期安全审计。",
+                  "attack_type": "远程",
+                  "release_date": "2024-05-02",
+                  "security_level_id": 3,
+                  "exploit_level_id": 0
+                }
+              ],
+              "indirect_vulnerabilities": 1
+            }
+          ],
+          "indirect_vulnerabilities": 6
+        }
+      ],
+      "indirect_vulnerabilities": 59
+    },
+    {
+      "id": "57714621344907266",
+      "direct": true,
+      "paths": [
+        "starsea-mall-master/src/main/resources/static/admin/dist/js/plugins/chartjs2/docs/search_plus_index.json"
+      ]
+    }
+  ],
+  "indirect_vulnerabilities": 59
+}

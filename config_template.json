@@ -1,0 +1,99 @@
+{
+  "evidence_sources": {
+    "nvd_enabled": true,
+    "ghsa_enabled": true,
+    "vendor_advisories_enabled": true,
+    "github_commits_enabled": true,
+    "poc_sources_enabled": true,
+    "github_token": null,
+    "nvd_api_key": null
+  },
+  "cache": {
+    "cache_dir": "~/.sca-enhancer-cache",
+    "ttl_hours": 48,
+    "max_cache_size_mb": 1024
+  },
+  "network": {
+    "proxy_url": null,
+    "tls_verify": true,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_delay_seconds": 1.0
+  },
+  "processing": {
+    "concurrency": 8,
+    "batch_size": 10,
+    "max_evidence_sources": 10,
+    "confidence_threshold": 0.5
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4",
+    "temperature": 0.1,
+    "max_tokens": 4000,
+    "openai_api_key": null,
+    "anthropic_api_key": null,
+    "gemini_api_key": null
+  },
+  "langsmith": {
+    "enabled": true,
+    "api_key": null,
+    "project_name": "sca-enhancer",
+    "endpoint": "https://api.smith.langchain.com"
+  },
+  "language_mappings": {
+    "java": {
+      "dangerous_functions": [
+        "ObjectInputStream.readObject",
+        "JndiLookup.lookup",
+        "JdbcTemplate.query"
+      ],
+      "sources": [
+        "HttpServletRequest.getParameter",
+        "HttpServletRequest.getHeader"
+      ],
+      "sinks": [
+        "Runtime.exec",
+        "ProcessBuilder.start",
+        "jndi_lookup"
+      ]
+    },
+    "javascript": {
+      "dangerous_functions": [
+        "eval",
+        "Function",
+        "vm.runInNewContext",
+        "child_process.exec"
+      ],
+      "sources": [
+        "req.query",
+        "req.body",
+        "req.params"
+      ],
+      "sinks": [
+        "eval",
+        "child_process.exec",
+        "fs.readFile"
+      ]
+    },
+    "python": {
+      "dangerous_functions": [
+        "pickle.load",
+        "yaml.load",
+        "subprocess.call"
+      ],
+      "sources": [
+        "request.args",
+        "request.form",
+        "request.json"
+      ],
+      "sinks": [
+        "eval",
+        "exec",
+        "subprocess.call"
+      ]
+    }
+  },
+  "output_format": "json",
+  "pretty_print": true
+}

@@ -205,3 +205,42 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# SCA-enhancer specific
+# Cache directories
+.sca-enhancer-cache/
+~/.sca-enhancer-cache/
+
+# Output files
+
+output/
+enhanced_findings.json
+processing_summary.json
+SAST_Sinks.json
+DAST_Inputs.json
+dast_inputs.json
+
+# Configuration files with sensitive data
+config.json
+.env.local
+.env.production
+
+# Debug and temporary files
+debug_*.py
+temp_*.py
+test_*.py
+
+# LangSmith traces
+langsmith_traces/
+
+# Model cache
+.cache/
+model_cache/
+
+# IDE specific
+.vscode/settings.json
+.idea/workspace.xml
+
+# OS specific
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "dependencies": [
+    "langchain-openai",
+    "langchain-community", 
+    "langgraph",
+    "aiohttp",
+    "pydantic",
+    "./sca_enhancer"
+  ],
+  "graphs": {
+    "sca_enhancer_agent": "./sca_enhancer/agent/graph.py:create_agent_graph"
+  },
+  "env": "./.env"
+}
